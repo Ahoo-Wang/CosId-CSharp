@@ -1,0 +1,33 @@
+<Project>
+
+    <Import Project="build\version.props" />
+
+    <PropertyGroup Label="Package">
+        <Product>CosId</Product>
+        <Copyright>2022 CosId, Inc.</Copyright>
+        <PackageId>$(AssemblyName)</PackageId>
+        <Authors>Ahoo Wang</Authors>
+        <MaintainerEmail>ahoowang@qq.com</MaintainerEmail>
+        <RepositoryUrl>https://github.com/Ahoo-Wang/CosId-CSharp</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <RepositoryRoot>$(MSBuildThisFileDirectory)</RepositoryRoot>
+        <PackageIconUrl>https://raw.githubusercontent.com/Ahoo-Wang/CosId/main/document/docs/.vuepress/public/logo.png</PackageIconUrl>
+        <PackageProjectUrl>https://github.com/Ahoo-Wang/CosId-CSharp</PackageProjectUrl>
+        <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+        <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+        <PackageTags>CosId Id ID-Generator Snowflake Segment</PackageTags>
+        <Description>Universal, flexible, high-performance distributed ID generator. | 通用、灵活、高性能的分布式 ID 生成器</Description>
+    </PropertyGroup>
+
+    <!-- Using SourceLink -->
+    <PropertyGroup>
+        <PublishRepositoryUrl>true</PublishRepositoryUrl>
+        <EmbedUntrackedSources>true</EmbedUntrackedSources>
+        <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All"/>
+    </ItemGroup>
+
+</Project>
