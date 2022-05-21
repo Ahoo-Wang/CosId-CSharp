@@ -2,5 +2,5 @@ namespace CosId;
 
 public class CosId
 {
-    public static readonly string COSID = "cosid";
+    public const string COSID = "cosid";
 }

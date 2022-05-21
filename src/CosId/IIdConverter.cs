@@ -8,6 +8,7 @@ public interface IIdConverter
     /// <param name="id"></param>
     /// <returns></returns>
     string AsString(long id);
+
     /// <summary>
     /// convert string type ID to long.
     /// </summary>
